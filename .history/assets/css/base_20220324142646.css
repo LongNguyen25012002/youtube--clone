@@ -101,9 +101,8 @@ i {
 
 .header__btn-menu,
 .header__microphone,
-.header__list-item,
-.btn-support-location-have-relative{
-    position: relative ;
+.header__list-item{
+    position: relative;
 }
 
 .click-btn{
@@ -258,30 +257,15 @@ i {
 
 /* category section */
 
-.category-bar-have-relative{
-    position: relative;
-    left: 0;
-    width: 100%;
-    height: inherit;
-}
-
 .category-content{
     display: flex;
     align-items: center;
     height: 100%;
     margin-left: 20px;
-    width: auto;
+    width: 100%;
+    position: absolute;
     inset: 0;
     transition: all 0.3s linear;
-    cursor: grabbing;
-    cursor: -webkit-grabbing;
-    overflow-x: scroll;
-    user-select: none;
-    will-change: transform;
-}
-
-.category-content::-webkit-scrollbar{
-    display: none;
 }
 
 .category-item{
@@ -304,10 +288,6 @@ i {
 .category-item.category-item--active{
     background-color: var(--icon-color);
     color: #fff;
-}
-
-.category-item:last-child{
-    margin-right: 20px;
 }
 
 .carouse-btn{

@@ -1,5 +1,4 @@
 // explicitly : rõ ràng
-// <!-- neatly : gọn gàng -->
 
 function start(){
     javascriptHeader();
@@ -17,14 +16,12 @@ function javascriptHeader(){
             btnClick.forEach(function(elActive){
                 elActive.addEventListener('mousedown',function(event){
                     this.classList.add('btn-down');
-                    event.stopPropagation()
                 })
             })
 
             btnClick.forEach(function(elActive){
                 elActive.addEventListener('mouseup',function(event){
                     this.classList.remove('btn-down');
-                    event.stopPropagation()
                 })
             })
         }
@@ -57,7 +54,6 @@ function javascriptHeader(){
             btnMic.onclick = () => {
               document.querySelector('.header__microphone-popup').style.display = 'flex';  
             }
-
         var btnClose = document.querySelector('.microphone-icon-close');
             btnClose.onclick = () => {
                 document.querySelector('.header__microphone-popup').style.display = 'none'         
@@ -75,15 +71,12 @@ function javascriptHeader(){
                 ListChild1.classList.toggle('header__list-child--active');
                 ListChild2.classList.remove('header__list-child--active');
                 notification.classList.remove('header__list-child-notification--active');
-
                 if( ListChild1.classList.contains('header__list-child--active')){
                     icon[0].className = 'ri-video-add-fill header__item-icon';
-                    icon[1].className = 'ri-grid-line header__item-icon';
-                    icon[2].className = 'bx bx-bell header__item-icon';
-                    // ri-movie-line header__list-child-icon
                     console.log(true)
                 } else {
                     icon[0].className = 'ri-video-add-line header__item-icon';
+                    console.log(false)
                 }
             }
 
@@ -93,10 +86,8 @@ function javascriptHeader(){
                 ListChild1.classList.remove('header__list-child--active');
                 notification.classList.remove('header__list-child-notification--active');
 
-                if(ListChild2.classList.contains('header__list-child--active')){      
+                if(ListChild2.classList.contains('header__list-child--active')){
                    icon[1].className = 'ri-grid-fill header__item-icon';
-                   icon[0].className = 'ri-video-add-line header__item-icon';
-                   icon[2].className = 'bx bx-bell header__item-icon';
                 }else{
                    icon[1].className = 'ri-grid-line header__item-icon';
                 }
@@ -110,8 +101,6 @@ function javascriptHeader(){
 
                 if(notification.classList.contains('header__list-child-notification--active')){
                     icon[2].className = 'bx bxs-bell header__item-icon';
-                    icon[0].className = 'ri-video-add-line header__item-icon';
-                    icon[1].className = 'ri-grid-line header__item-icon';
                  }else{
                     icon[2].className = 'bx bx-bell header__item-icon';
                  }
@@ -321,31 +310,12 @@ function sliderCarouselhandle(){
         categoryContent.innerHTML = html;
     
     var carouselContent = document.querySelector('.category-content');
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-    carouselContent.addEventListener('mousedown', (e) => {
-        isDown = true;
-        startX = e.pageX - carouselContent.offsetLeft;
-        scrollLeft = carouselContent.scrollLeft;
-      });
-      carouselContent.addEventListener('mouseleave', () => {
-        isDown = false;
-      });
-      carouselContent.addEventListener('mouseup', (e) => {
-        isDown = false;
-      });
-      carouselContent.addEventListener('mousemove', (e) => {
-        if(!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - carouselContent.offsetLeft;
-        const walk = (x - startX) * 2; //scroll-fast
-        carouselContent.scrollLeft = scrollLeft - walk;
-        // console.log(walk);
-      });  
-      
-      var btnLeft = document.querySelector('.carouse-btn--prev');
-      var btnRight = document.querySelector('.carouse-btn--next');      
+    var carouseLeftBTN = document.querySelector('.carouse-btn--prev');
+    var carouseRightBTN = document.querySelector('.carouse-btn--next');
+    var totalWidth = carouselContent.getBoundingClientRect().width;
+    console.log(totalWidth);
+    var itemCategory = [...document.querySelectorAll('.category-item')];
+     
 }
 
 function showVideoSection(){
@@ -354,32 +324,29 @@ function showVideoSection(){
     var renderVideo = document.querySelector('.js-render-video');
     let htmlVideo = '';
         
-    for(var getData of dataVideo){
+    for(getData of dataVideo){
         htmlVideo += `
-            <div class="col c-12 m-4 l-3">
+                <div class="col c-12 m-4 l-3">
                 <div class="show-video-single">
-                <a href ="./listVideos/index.html" class="show-video-single--link">    
-                    <div class="show-video__image" style="background-image: url(${getData.bg__img});" >
+                    <div class="show-video__image" style="background-image: url(${getData.bg__img});">
                         <span class="show-video__run-time">1:18:53</span>
                         <span class="show-video__prompt-hover">Keep hovering to play</span>
                     </div>
-                </a>
                     <div class="show-video-details">
                         <div class="show-video__details-body">
                             <span>
                                 <img src="${getData.author__avatar}" alt="avatar of author" class="show-video__avatar">
                             </span>
-                            <div class="show-video__details-infor">                              
+                            <div class="show-video__details-infor">
+                                
                                 <div class="show-video__btn-support-location">
-                                <div class="btn-support-location-have-relative">
                                     <i class="ri-more-2-fill show-video__btn-icon"></i>
                                     <span class="click-btn"></span>
+
                                     <ul class="show-video__support-location"></ul>
-                                    </div>
                                 </div>
-                                <a href ="./listVideos/index.html" class="show-video-single--link">  
+
                                 <h3 class="show-video__title">${getData.title}</h3>
-                                </a>
                                 <span class="show-video__name-channel">${getData.name__channel}</span>
                                 <div><span class="show-video__viewed">1M views</span><span class="show-video__date-post">13 days ago</span></div>                                       
                         </div>
@@ -391,30 +358,19 @@ function showVideoSection(){
                         <div class="show-video__btn-area">
                             <i class="ri-menu-unfold-fill show-video__btn-icon-add"></i>ADD TO QUEUE</div>
                         </div>
-                </div>
+                    </div>
+
             </div> 
         `
     }
+
     renderVideo.innerHTML = htmlVideo; 
 }
 
 
-// change page
-let changePage = (el,type,fun) => {
-    el.forEach(currentElement => {
-        currentElement.addEventListener(type,fun);
-    })
-}
-changePage(document.querySelectorAll('.show-video-single'),'click', handleChangePage);
 
-function handleChangePage(event){
-    window.location.replace('http://127.0.0.1:5500/listVideos/index.html');
-    event.currentTarget.style.border = ' 1px solid var(--gray-color-thin)';
-    event.currentTarget.style.backgroundColor = 'var(--hover-color)'
-    event.currentTarget.style.borderRadius = '5px';
-    event.currentTarget.style.paddingBottom = '5px';
-    event.currentTarget.stopPropagation();
-}
+
+
 
 
 

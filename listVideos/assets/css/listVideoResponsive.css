@@ -1,0 +1,14 @@
+
+@media (max-width:667.9px) {
+    .play-video__show-video iframe{
+        height: 300px;
+    }
+
+    .listVideo-main .container {
+        width: 100%;
+    }
+
+    .listVideo-main{
+        padding: 15px 8px 8px;
+    }
+}
