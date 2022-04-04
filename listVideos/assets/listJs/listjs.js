@@ -1,8 +1,6 @@
 var categroyBar = document.querySelector('.category-bar-location');
 var navbarSideCT = document.querySelector('.navbar-side');
 var navbarListSection  = document.querySelector('.navbar-sider__section-list');
-
-
 function javascriptHeader(){
     // set btn-click for button common
     var btnClick = document.querySelectorAll('.click-btn');
@@ -257,9 +255,9 @@ function navbarSide(){
     //  var showListBtn = document.querySelector('.js--btn-item-show');
     //  render html for follow-section
     function follower(){
-        var html = '';
-        for(data of userFllowerData){
-            html+= `
+        var htmlFollower = '';
+        for(let data of userFllowerData){
+            htmlFollower += `
             <li class="list-follow__item">
                 <a href="#" class="list-follow__item-link">
                     <span><img src="${data.avatar}" alt="follower avatar" class="list-follow__img-avatar"></span>
@@ -282,7 +280,7 @@ function navbarSide(){
         var elementShow__parent = document.createElement('div');
             elementShow__parent.innerHTML = elementShow;   
 
-            followList.innerHTML = html + elementShow; 
+            followList.innerHTML = htmlFollower + elementShow; 
             
             followList.querySelector('.list-follow__item-show').addEventListener('click', function(){
         
@@ -307,11 +305,11 @@ function navbarSide(){
         })
 
 
-        window.addEventListener('mouseup',function(event){
-            if(event.target !=  navbarSideCT  && event.target.parentNode !=  navbarSideCT ){
-                document.querySelector('.navbar-sider__section-list.navbar-sider__section-list--active').classList.remove('navbar-sider__section-list--active');
-            }
-      }); 
+    //     window.addEventListener('mouseup',function(event){
+    //         if(event.target !=  navbarSideCT  && event.target.parentNode !=  navbarSideCT ){
+    //             document.querySelector('.navbar-sider__section-list.navbar-sider__section-list--active').classList.remove('navbar-sider__section-list--active');
+    //         }
+    //   }); 
 }
 navbarSide();
 
@@ -416,14 +414,14 @@ let detailsVD = [
           
     },
     {
-        img__src:'https://i.ytimg.com/vi/I4M5k-KTHek/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAw5PDeH2sDJu6PiQY0tpGbNUTrWA',
+        img__src:'https://i.ytimg.com/vi/c1xTDSIXit8/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBEkvALdBMKt9AE9rTuhUOIViXFAw',
         
         id:10,
-        title: "P$mall ft. Sol7, Ben - SNOWDAY (Prod. AOQUADI)",
-        video: '<iframe width="100%" height="315" src="https://www.youtube.com/embed/I4M5k-KTHek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        title: "React E-Commerce App Design Tutorial | React Shopping Cart UI Design",
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/c1xTDSIXit8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative : '<a href="#">#Snowday </a><a href="#">#DCOD</a><a href="#">#Sol7</a>',
-        time__VD: '4:32',
-        name__channel: 'DC GanG Officical',
+        time__VD: '1:42:32',
+        name__channel: 'Lama Dev',
 
     },
     {
@@ -534,7 +532,8 @@ let sectionListVideo = (getVD) => {
         <div class="listVideo-Choose__box-details">
             <h2 class="listVideo-Choose__title">${title}</h2>
             <p class="listVideo-Choose__name-channel">${name__channel}</p>
-            <p class="listVideo-Choose__view-and-day-post">2.6M <span>.</span> 6 day ago</p>
+            <p class="listVideo-Choose__view-and-day-post">
+           <span> 2.6M </span> <span>6 day ago</span></p>
         </div>
        </div>`
     }).join(' ');
