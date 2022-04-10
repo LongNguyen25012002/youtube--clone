@@ -1,5 +1,6 @@
 // explicitly : rõ ràng
 // <!-- neatly : gọn gàng -->
+import {dataVD,categoryData} from './dataVideo.js';
 
 function start(){
     javascriptHeader();
@@ -264,7 +265,7 @@ function navbarSide(){
     //  render html for follow-section
     function follower(){
         var html = '';
-        for(data of userFllowerData){
+        for(let data of userFllowerData){
             html+= `
             <li class="list-follow__item">
                 <a href="#" class="list-follow__item-link">
@@ -312,7 +313,7 @@ function sliderCarouselhandle(){
     let category_data = [...categoryData];
     var categoryContent = document.querySelector('.category-content');
     var html = '<div class="category-item category-item--active">all</div>';
-        for(getvalue of category_data){
+        for(let getvalue of category_data){
             
             html += `       
             <div class="category-item">${getvalue.type}</div>
@@ -358,7 +359,7 @@ function showVideoSection(){
         htmlVideo += `
             <div class="col c-12 m-4 l-3">
                 <div class="show-video-single">
-                <a href ="./listVideos/index.html" class="show-video-single--link">    
+                <a href ="./listVideos/index.html?id=${getData.id}" class="show-video-single--link">    
                     <div class="show-video__image" style="background-image: url(${getData.bg__img});" >
                         <span class="show-video__run-time">1:18:53</span>
                         <span class="show-video__prompt-hover">Keep hovering to play</span>
@@ -398,10 +399,9 @@ function showVideoSection(){
     renderVideo.innerHTML = htmlVideo; 
 }
 
-
 // change page
 let changePage = (el,type,fun) => {
-    el.forEach(currentElement => {
+    el.forEach((currentElement , index) => {
         currentElement.addEventListener(type,fun);
     })
 }
@@ -414,7 +414,5 @@ function handleChangePage(event){
     event.currentTarget.style.borderRadius = '5px';
     event.currentTarget.style.paddingBottom = '5px';
     event.currentTarget.stopPropagation();
+
 }
-
-
-

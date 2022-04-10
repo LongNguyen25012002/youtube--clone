@@ -492,8 +492,9 @@ let detailsVD = [
 ]
 
 let sectionMainVD = document.querySelector('.play-video-section');
-var indexVideo = 0;
-
+var params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+var indexVideo = id;
 
 let sectionShowVideo = (getVD) => {
     let html = `<div class="play-video__show-video">
@@ -547,6 +548,16 @@ selectVDbtn.forEach((element,index) => {
     element.addEventListener('click', (e) => {
         indexVideo = index;
         sectionShowVideo(detailsVD)
+        document.documentElement.scrollTop = 0;
     })
+})
+
+// xử lý lớp overlay
+let overlay = document.querySelector('.overlay-navbar-side');
+let Navbar__ = document.querySelector('.navbar-side');
+overlay.addEventListener('mouseup',(evt) => {
+    if(event.target !=  Navbar__  && event.target.parentNode !=  Navbar__ ){
+            document.querySelector('.navbar-sider__section-list.navbar-sider__section-list--active').classList.remove('navbar-sider__section-list--active');
+        }
 })
 

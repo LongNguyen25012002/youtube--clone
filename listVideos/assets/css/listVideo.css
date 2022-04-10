@@ -22,12 +22,19 @@
 .navbar-side{
     position: absolute;
     top: 0;
-    left: -100%;
 }
 
 .navbar-side.navbar-side--active{
-    left: 0;
-    transition: all 0.3s linear;
+    animation: slider 0.2s linear;
+}
+
+@keyframes slider {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
 }
 
 .navbar-sider__header{
@@ -187,7 +194,7 @@
 }
 
 
-/* 
+
 
 :root{
     --title-color:rgb(8, 8, 8);
@@ -213,4 +220,4 @@
     --navbar-side-width: 240px;
     --section-show-video-gb:#f9f9f9;
     --grba-gray-bg-select:rgba(43, 43, 43, 0.877);
-} */
+}

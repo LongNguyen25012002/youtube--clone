@@ -669,27 +669,4 @@
 
 
 
-:root{
-    --title-color:rgb(8, 8, 8);
-    --text-color:rgb(22, 22, 22);
-    --gray-color-thin:#d6d6d6;
-    --gray-light-color:rgb(206, 206, 206);
-    --hover-color-click:#e5e5e5;
-    --hover-color:#e7e7e7;
-    --font-primarily:'Roboto', sans-serif;
-    --rgba-color-click:rgba(211, 211, 211, 0.5);
-    --icon-color:#030303;
-    --scroll-color:#888888;
-    --scroll-bg:#faf9f9;
-    --scroll-hover:rgb(99, 99, 99);
-    --header-height: 56px;
-    --width-slider-bar: 240px;
-    --blue-color:#1376af;
-    --micro-bg: rgba(177, 177, 177, 0.2);
-    --white-color:#fff;
-    --red-color:#ff0000;
-    --gray-text:#606060;
-    --hover--active:rgba(54, 54, 54, 0.3);
-    --navbar-side-width: 240px;
-    --section-show-video-gb:#f9f9f9;
-}
+
