@@ -252,7 +252,6 @@ function navbarSide(){
             status: 'list-state--New-Post',
         }
     ];
-    //  var showListBtn = document.querySelector('.js--btn-item-show');
     //  render html for follow-section
     function follower(){
         var htmlFollower = '';
@@ -303,13 +302,6 @@ function navbarSide(){
             document.querySelector('.navbar-sider__section-list.navbar-sider__section-list--active').classList.remove('navbar-sider__section-list--active');
             document.querySelector('.navbar-side.navbar-side--active').classList.remove('navbar-side--active');        
         })
-
-
-    //     window.addEventListener('mouseup',function(event){
-    //         if(event.target !=  navbarSideCT  && event.target.parentNode !=  navbarSideCT ){
-    //             document.querySelector('.navbar-sider__section-list.navbar-sider__section-list--active').classList.remove('navbar-sider__section-list--active');
-    //         }
-    //   }); 
 }
 navbarSide();
 
@@ -561,3 +553,65 @@ overlay.addEventListener('mouseup',(evt) => {
         }
 })
 
+function VD_details(){
+    let authorUpdate_section = document.querySelector('.author-update-section');
+    let btnShow = document.querySelector('.btn-show');
+    let btnSub = document.querySelector('.channel__sub');
+    let subTEXT = document.querySelector('.channel__sub p');
+    let btnCancel = document.querySelector('.btn-cancel');
+    let btnUnsub = document.querySelector('.btn-removeSub');
+    let wrapRemoveSub = document.querySelector('.remove-sub');
+
+    let subIndex = 0;
+
+        btnShow.addEventListener('click', evt => {
+            authorUpdate_section.classList.toggle('set-heigth');
+
+            if(authorUpdate_section.classList.contains('set-height')){
+                btnShow.innerText = 'Show less';
+            } else {
+                btnShow.innerText = 'Show more';
+            }      
+        })
+       
+        btnSub.addEventListener('click', evt => {
+            subIndex++;
+            console.log(subIndex);
+            if(subIndex == 1){
+                evt.currentTarget.style.background = "var(--hover-color)";
+                evt.currentTarget.style.color = "var(--gray-text)";
+                subTEXT.textContent = "SUBSCRIBED";
+            }
+
+            if(subIndex == 2){               
+                subIndex = 0;
+                wrapRemoveSub.style.display = "flex";
+            }
+            evt.stopPropagation()
+        })
+
+        btnCancel.onclick = () => {
+            wrapRemoveSub.style.display = "none";
+        }
+
+        btnUnsub.onclick = () => {
+            subTEXT.textContent = "SUBSCRIBE";
+            btnSub.style.background = "#cc0000";
+            btnSub.style.color = "#fff";
+            wrapRemoveSub.style.display = "none";
+        }
+}
+VD_details()
+
+function comment(){
+    let commetWrapCancel = document.querySelector('.comments-cancel-wrap');
+    let input = document.querySelector('.input-comment');
+    let btnCancelCM = document.querySelector('.js-btn-cancel')
+    input.addEventListener('click', () => {
+        commetWrapCancel.style.display = 'flex';
+    })
+    btnCancelCM.onclick = () => {
+        commetWrapCancel.style.display = "none";
+    } 
+}
+comment()
