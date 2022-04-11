@@ -2,14 +2,6 @@
 // <!-- neatly : gọn gàng -->
 import {dataVD,categoryData} from './dataVideo.js';
 
-function start(){
-    javascriptHeader();
-    navbarSide();
-    sliderCarouselhandle();
-    showVideoSection();
-}
-start();
-
 function javascriptHeader(){
     // set btn-click for button common
     var btnClick = document.querySelectorAll('.click-btn');
@@ -412,3 +404,11 @@ document.querySelectorAll('.show-video-single').forEach((el,index) => {
     })
 })
 
+
+function start(){
+    javascriptHeader();
+    navbarSide();
+    sliderCarouselhandle();
+    showVideoSection();
+}
+start();

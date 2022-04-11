@@ -305,7 +305,6 @@ function navbarSide(){
 }
 navbarSide();
 
-
 let detailsVD = [
     {
         id:1,
