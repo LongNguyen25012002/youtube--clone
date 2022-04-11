@@ -14,6 +14,11 @@
     margin-right: -8px;
 }
 
+.row.gutter{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
 .col{
     padding-left: 8px;
     padding-right: 8px;
@@ -88,6 +93,16 @@
     .row {
         margin-left: -8px;
         margin-right: -8px;
+    }
+
+    .row.gutter{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .row.gutter .col{
+        padding-left: 6px;
+        padding-right: 6px;
     }
 
     .col {
@@ -225,6 +240,17 @@
         margin-left: -8px;
         margin-right: -8px;
     }
+
+    .row.gutter{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .row.gutter .col{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
 
     .col {
         padding-left: 8px;

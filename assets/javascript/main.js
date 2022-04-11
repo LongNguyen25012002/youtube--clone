@@ -400,19 +400,15 @@ function showVideoSection(){
 }
 
 // change page
-let changePage = (el,type,fun) => {
-    el.forEach((currentElement , index) => {
-        currentElement.addEventListener(type,fun);
+document.querySelectorAll('.show-video-single').forEach((el,index) => {
+    el.addEventListener('click',evt => {
+        window.location.assign(`http://127.0.0.1:5500/listVideos/index.html?id=${index}`);    
+        event.currentTarget.style.border = ' 1px solid var(--gray-color-thin)';
+        event.currentTarget.style.backgroundColor = 'var(--hover-color)'
+        event.currentTarget.style.borderRadius = '5px';
+        event.currentTarget.style.paddingBottom = '5px';
+        event.currentTarget.stopPropagation();
+        event.currentTarget.preventDefault();
     })
-}
-changePage(document.querySelectorAll('.show-video-single'),'click', handleChangePage);
+})
 
-function handleChangePage(event){
-    window.location.replace('http://127.0.0.1:5500/listVideos/index.html');
-    event.currentTarget.style.border = ' 1px solid var(--gray-color-thin)';
-    event.currentTarget.style.backgroundColor = 'var(--hover-color)'
-    event.currentTarget.style.borderRadius = '5px';
-    event.currentTarget.style.paddingBottom = '5px';
-    event.currentTarget.stopPropagation();
-
-}
