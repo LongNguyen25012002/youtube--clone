@@ -409,10 +409,11 @@ function showVideoSection(){
 
 document.querySelectorAll('.show-video-single').forEach((el,index) => {
     el.addEventListener('click',evt => {
-        window.location.assign(`http://127.0.0.1:5500/listVideos/index.html?id=${index}`);              
+        window.location.assign(`https://dragonnguyen74.github.io/youtube--clone/listVideos/index.html?id=${index}`);  
+        console.log('erron');
+        evt.preventDefault();            
     }) 
 })
-
 }
 
 
