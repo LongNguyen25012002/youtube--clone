@@ -402,7 +402,20 @@ document.querySelectorAll('.show-video-single').forEach((el,index) => {
         console.log(index);
     })
 })
+
+document.querySelectorAll('.show-video-single').forEach((el,index) => {
+    el.addEventListener('keyup',evt => {           
+        evt.currentTarget.style.border = ' none';
+        evt.currentTarget.style.backgroundColor = 'none'
+        evt.currentTarget.style.borderRadius = 'none';
+        evt.currentTarget.style.paddingBottom = 'none';
+        evt.currentTarget.stopPropagation();
+        console.log(index);
+    })
+})
 }
+
+
 
 
 
