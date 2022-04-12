@@ -391,33 +391,29 @@ function showVideoSection(){
     renderVideo.innerHTML = htmlVideo; 
 
     // change page
+    // document.querySelectorAll('.show-video-single').forEach((el,index) => {
+    //     el.addEventListener('keydown',evt => {        
+    //         evt.currentTarget.style.border = ' 1px solid var(--gray-color-thin)';
+    //         evt.currentTarget.style.backgroundColor = 'var(--hover-color)'
+    //         evt.currentTarget.style.borderRadius = '5px';
+    //         evt.currentTarget.style.paddingBottom = '5px';      
+    //     }) 
+
+    // document.querySelectorAll('.show-video-single').forEach((el,index) => {
+    //         el.addEventListener('keyup',evt => {        
+    //             evt.currentTarget.style.border = ' none';
+    //             evt.currentTarget.style.backgroundColor = 'none'
+    //             evt.currentTarget.style.borderRadius = 'none';
+    //             evt.currentTarget.style.paddingBottom = 'none';      
+    //         })
+
 document.querySelectorAll('.show-video-single').forEach((el,index) => {
     el.addEventListener('click',evt => {
-        window.location.assign(`http://127.0.0.1:5500/listVideos/index.html?id=${index}`);    
-        evt.currentTarget.style.border = ' 1px solid var(--gray-color-thin)';
-        evt.currentTarget.style.backgroundColor = 'var(--hover-color)'
-        evt.currentTarget.style.borderRadius = '5px';
-        evt.currentTarget.style.paddingBottom = '5px';
-        evt.currentTarget.stopPropagation();
-        console.log(index);
-    })
+        window.location.assign(`http://127.0.0.1:5500/listVideos/index.html?id=${index}`);              
+    }) 
 })
 
-document.querySelectorAll('.show-video-single').forEach((el,index) => {
-    el.addEventListener('keyup',evt => {           
-        evt.currentTarget.style.border = ' none';
-        evt.currentTarget.style.backgroundColor = 'none'
-        evt.currentTarget.style.borderRadius = 'none';
-        evt.currentTarget.style.paddingBottom = 'none';
-        evt.currentTarget.stopPropagation();
-        console.log(index);
-    })
-})
 }
-
-
-
-
 
 
 function start(){
