@@ -63,7 +63,7 @@ Extra extra large : xxl >= 1400px */
         --category-bar-height: var(--header-height);
     }
     .header__btn-icon-menu, .header__btn-search-icon, .header__microphone-icon, .header__item-icon {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     
     .header__list-item-img {
