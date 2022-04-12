@@ -566,10 +566,12 @@ function VD_details(){
         btnShow.addEventListener('click', evt => {
             authorUpdate_section.classList.toggle('set-heigth');
 
-            if(authorUpdate_section.classList.contains('set-height')){
-                btnShow.innerText = 'Show less';
+            if(authorUpdate_section.classList.contains('set-heigth')){
+               document.querySelector('.btn-show').innerHTML = 'Show less';
+               console.log('show less')
             } else {
-                btnShow.innerText = 'Show more';
+               document.querySelector('.btn-show').innerHTML = 'Show more';
+               console.log('show more')
             }      
         })
        

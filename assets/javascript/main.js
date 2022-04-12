@@ -363,7 +363,7 @@ function showVideoSection(){
                                 <img src="${getData.author__avatar}" alt="avatar of author" class="show-video__avatar">
                             </span>
                             <div class="show-video__details-infor">                              
-                                <div class="show-video__btn-support-location">
+                                <div class="show-video__btn-support-location js-btn-support">
                                 <div class="btn-support-location-have-relative">
                                     <i class="ri-more-2-fill show-video__btn-icon"></i>
                                     <span class="click-btn"></span>
@@ -391,29 +391,43 @@ function showVideoSection(){
     renderVideo.innerHTML = htmlVideo; 
 
     // change page
-    // document.querySelectorAll('.show-video-single').forEach((el,index) => {
-    //     el.addEventListener('keydown',evt => {        
-    //         evt.currentTarget.style.border = ' 1px solid var(--gray-color-thin)';
-    //         evt.currentTarget.style.backgroundColor = 'var(--hover-color)'
-    //         evt.currentTarget.style.borderRadius = '5px';
-    //         evt.currentTarget.style.paddingBottom = '5px';      
-    //     }) 
-
-    // document.querySelectorAll('.show-video-single').forEach((el,index) => {
-    //         el.addEventListener('keyup',evt => {        
-    //             evt.currentTarget.style.border = ' none';
-    //             evt.currentTarget.style.backgroundColor = 'none'
-    //             evt.currentTarget.style.borderRadius = 'none';
-    //             evt.currentTarget.style.paddingBottom = 'none';      
-    //         })
-
+    document.querySelectorAll('.show-video-single').forEach((el,index) => {
+        el.addEventListener('keydown', evt => {        
+            evt.currentTarget.style.border = ' 1px solid var(--gray-color-thin)';
+            evt.currentTarget.style.backgroundColor = 'var(--hover-color)'
+            evt.currentTarget.style.borderRadius = '5px';
+            evt.currentTarget.style.paddingBottom = '5px';      
+        }) 
+    })
+    
+    
+    document.querySelectorAll('.show-video-single').forEach((el,index) => {
+            el.addEventListener('keyup',evt => {        
+                evt.currentTarget.style.border = ' none';
+                evt.currentTarget.style.backgroundColor = 'none';
+                evt.currentTarget.style.borderRadius = 'none';
+                evt.currentTarget.style.paddingBottom = 'none';      
+            })
+    })
+  
 document.querySelectorAll('.show-video-single').forEach((el,index) => {
     el.addEventListener('click',evt => {
         window.location.assign(`https://dragonnguyen74.github.io/youtube--clone/listVideos/index.html?id=${index}`);  
-        console.log('erron');
-        evt.preventDefault();            
+        evt.currentTarget.style.border = ' 1px solid var(--gray-color-thin)';
+        evt.currentTarget.style.backgroundColor = 'var(--hover-color)'
+        evt.currentTarget.style.borderRadius = '5px';
+        evt.currentTarget.style.paddingBottom = '5px';           
     }) 
 })
+
+// handel btn support
+  let btnSupportUser = document.querySelectorAll('.js-btn-support');
+      btnSupportUser.forEach(elm => {
+          elm.addEventListener('click', evt => {
+              console.log(evt);
+              evt.stopImmediatePropagation();             
+          })
+      })
 }
 
 
@@ -424,3 +438,5 @@ function start(){
     showVideoSection();
 }
 start();
+
+
