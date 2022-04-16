@@ -309,7 +309,7 @@ let detailsVD = [
     {
         id:1,
         title: "BINZ x TOULIVER - DON'T BREAK MY HEART (OFFICIAL MV)",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/Rrr-5-4wcEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> ',        
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/Rrr-5-4wcEs?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> ' ,       
         link__relative: '<a href="#">#1 TRONG DANH MỤC ÂM NHẠC THỊNH HÀNH</a>',
 
         img__src: 'https://i.ytimg.com/vi/Rrr-5-4wcEs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLALb1GXoVAOzMju-V3MzzdkDLOq0A',
@@ -319,7 +319,7 @@ let detailsVD = [
     {
         id:2,
         title: "Chìm Sâu - RPT MCK (feat. Trung Trần) | Official Lyrics Video",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/Yw9Ra2UiVLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/Yw9Ra2UiVLw?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative: '<a href="#">#6 TRONG DANH MỤC ÂM NHẠC THỊNH HÀNH</a>',
 
         img__src: 'https://i.ytimg.com/vi/Yw9Ra2UiVLw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDWRjVVItTNbyCeajdohw2CCljuDw',
@@ -330,7 +330,7 @@ let detailsVD = [
     {
         id:3,
         title: "Bảo Anh - Moodshow Tập 3 (Full) | Xin Lỗi, Một Ngày Mùa Đông, Yếu Đuối, Mặt Trời Của Em",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/bwpZ2Ss3bVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/bwpZ2Ss3bVk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative : '<a href="#">#BaoAnh </a><a href="#">#Moodshow</a><a href="#"> #popmusic</a>',
 
         img__src: 'https://i.ytimg.com/vi/bwpZ2Ss3bVk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB8IbH45MjJc8JBSwfYFC4S6bWEvQ',
@@ -343,7 +343,7 @@ let detailsVD = [
         
         id:4,
         title: "Node.js and Express.js - Full Course",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/Oe421EPjeBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/Oe421EPjeBE?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative : '',
         time__VD: '1:54:43',
         name__channel: 'freeCodeCamp.com', 
@@ -354,7 +354,7 @@ let detailsVD = [
         
         id:5,
         title: "Learn HTML – Full Tutorial for Beginners (2022)",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/kUMe1FH4CHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/kUMe1FH4CHE?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative : '',
         time__VD: '1:31:27',
         name__channel: 'freeCodeCamp.com',        
@@ -365,7 +365,7 @@ let detailsVD = [
         
         id:6,
         title: "Form validation - Phần 2",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/scybnB9vYVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/scybnB9vYVQ?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>',
         link__relative : '<a href="#">#hoclaptrinh </a><a href="#">#mienphi</a><a href="#">#frontend</a>',
         time__VD: '1:01:43',
         name__channel: 'F8 Official <i class="ri-checkbox-circle-fill"></i>',
@@ -376,7 +376,7 @@ let detailsVD = [
         
         id:7,
         title: "JSX render Arrays | JSX FQA",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/i1cjVyIZCKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/i1cjVyIZCKs?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative : '<a href="#">#hoclaptrinh </a><a href="#">#mienphi</a><a href="#">#frontend</a>',
         time__VD: '7:31',
         name__channel: 'F8 Official <i class="ri-checkbox-circle-fill"></i>',        
@@ -387,7 +387,7 @@ let detailsVD = [
         
         id:8,
         title: "Create a Responsive Halloween Website Design Using HTML CSS & JavaScript 🎃",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/lgo1CEPZoxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/lgo1CEPZoxg?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative : '<a href="#">#responsivewebsite </a><a href="#">#createresponsivewebsite</a><a href="#">#bedimcode</a>',
         time__VD: '44:47',
         name__channel: 'Bedimcode',
@@ -398,7 +398,7 @@ let detailsVD = [
         
         id:9,
         title: "Responsive Website Design Using HTML CSS And JavaScript 🥗 | Website Restaurant Light/Dark mode",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/5RIFrZEjURA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/5RIFrZEjURA?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative : '<a href="#">#responsive </a><a href="#">#website</a><a href="#">#htmlcss</a>',
         time__VD: '34:23',
         name__channel: 'Bedimcode',
@@ -409,7 +409,7 @@ let detailsVD = [
         
         id:10,
         title: "React E-Commerce App Design Tutorial | React Shopping Cart UI Design",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/c1xTDSIXit8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/c1xTDSIXit8?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative : '<a href="#">#Snowday </a><a href="#">#DCOD</a><a href="#">#Sol7</a>',
         time__VD: '1:42:32',
         name__channel: 'Lama Dev',
@@ -420,7 +420,7 @@ let detailsVD = [
         
         id:11,
         title: "Viết chức năng ẩn hiển mật khẩu input với Javascript",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/Sy75UyVkpUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/Sy75UyVkpUU?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative : '',
         time__VD: '7:43',
         name__channel: 'Evondev',
@@ -431,7 +431,7 @@ let detailsVD = [
         
         id:12,
         title: "editation - Monoman .beautiful comment section relaxing music soothing relief",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/FjHGZj2IjBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/FjHGZj2IjBk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative : '  <a href="#">#sleep</a><a href="#">#relaxing </a><a href="#">#study</a>',
         time__VD: '3:04:51',
         name__channel: 'NONOMAN', 
@@ -442,7 +442,7 @@ let detailsVD = [
         
         id:13,
         title: "Tôi Là Ai Trong Em | Guitar Acoustic Cover | Thái Engg - Thắng Nguyễn",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/zsQJWE9W-ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/zsQJWE9W-ME?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative : '',
         time__VD: '2:73',
         name__channel: 'DC GanG Officical', 
@@ -453,7 +453,7 @@ let detailsVD = [
         
         id:14,
         title: "Từ khóa \"this\" trong Javascript? Dễ hiểu cùng F8 nào!",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/ii1Ra_zLDIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/ii1Ra_zLDIo?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative : '<a href="#">#hoclaptrinh </a><a href="#">#mienphi</a><a href="#">#frontend</a>',
         time__VD: '6:43',
         name__channel: 'F8 Official <i class="ri-checkbox-circle-fill"></i>', 
@@ -463,7 +463,7 @@ let detailsVD = [
         
         id:15,
         title: "[Sách nói] Sống Đơn Giản Cho Mình Thanh Thản - Chương 1 | Shunmyo Masuno",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/IMyDOj45USU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/IMyDOj45USU?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative : '<a href="#">#fonos</a><a href="#">#sáchnói</a><a href="#">#SốngĐơnGiảnChoMìnhThanhThản</a>',
         time__VD: '50:43',
         name__channel: 'Fonos - Kho sách nói bản quyền', 
@@ -474,7 +474,7 @@ let detailsVD = [
         
         id:16,
         title: "Tiktok hits 2022 👑 Viral songs latest ~ Trending tiktok songs",
-        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/8BUs-CPjr6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="530" src="https://www.youtube.com/embed/8BUs-CPjr6c?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         link__relative : '',
         time__VD: '1:20:28',
         name__channel: 'Deep Chill Mix',  
